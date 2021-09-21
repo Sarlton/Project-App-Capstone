@@ -1,0 +1,153 @@
+<div class="rows">
+  <div class="col-3 head">
+    <h1>Come Fashionista with us!!!</h1>
+    <p>
+      Our online shop is alive and ready. The covid can never beat the good
+      relationship we have all together. You and us we are the greatest of them
+      all. Come and shop with us online
+    </p>
+  </div>
+  <div class="image col-2">
+    <img src="" alt="" />
+  </div>
+</div>
+
+<div class="items">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let pro of productList">
+      <img class="img" (click)="image()" src="{{ pro.product_image }}" alt="" />
+      <h5
+        style="
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 20ch;
+        "
+      >
+        {{ pro.product_desc }}
+      </h5>
+      <h6>{{ pro.product_price }}</h6>
+    </div>
+  </div>
+</div>
+
+<!-- --- Features section --- -->
+
+<div class="feature">
+  <div class="items">
+    <div class="row">
+      <h3 class="title">Features</h3>
+      <div class="col-md-3" *ngFor="let feat of featureList">
+        <img
+          class="img"
+          (click)="addToCart(feat)"
+          src="{{ feat.product_image }}"
+          alt=""
+        />
+        <h5
+          style="
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 20ch;
+          "
+        >
+          {{ feat.product_desc }}
+        </h5>
+        <h6>R{{ feat.product_price }}</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- --- Sale section --- -->
+
+<div class="sale">
+  <div class="row">
+    <div class="title"><h4>Sales</h4></div>
+    <div class="col-md-3" *ngFor="let sale of saleList">
+      <img
+        src="{{ sale.product_image }}"
+        (click)="addToCartSale(sale)"
+        alt=""
+        class="img"
+      />
+      <h5
+        style="
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 20ch;
+        "
+      >
+        {{ sale.product_desc }}
+      </h5>
+      <h6>was R{{ sale.product_normal_price }}</h6>
+      <h6>
+        now R{{ sale.product_sale_price }}
+        <sup style="background-color: red; color: #fff">40%</sup>
+      </h6>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+
+<!-- --- Promotions section --- -->
+
+<div class="promotion">
+  <div class="container">
+    <div class="sale">
+      <div class="title"><h5>Promotions</h5></div>
+      <div class="row now">
+        <div class="col-md-7">
+          <img
+            class="louis"
+            src="https://images.pexels.com/photos/5868272/pexels-photo-5868272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt=""
+          />
+        </div>
+        <div class="col-md-5 para">
+          <h3>
+            <p><strong>Black Friday Deals!!!</strong></p>
+          </h3>
+          <h5>
+            First come, First serve! Come get some huge bargains on Black Friday
+            and be the one to walk out smiling all the way home.
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- --- Footer section --- -->
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer col-md-3 first another">
+        <img
+          src="https://i.postimg.cc/PrFT4LYN/74045115-padded-logo.png"
+          alt=""
+          style="width: 120; height: 120px; border-radius: 15px"
+        />
+        <p style="margin-bottom: 10px">
+          Making fashion easier for you with deliveries,promotions on best
+          products and exciting new features. Your needs put first.
+        </p>
+        <small>Sarlton's Designs</small>
+      </div>
+      <div class="footer col-md-3">
+        <h3>Follow us on our socials</h3>
+        <ul>
+          <li><i class="fab fa-facebook-square fa-2x"></i></li>
+          <li><i class="fab fa-twitter-square fa-2x"></i></li>
+          <!-- <li>Instagram<i class="fab fa-instagram-square"></i></li> -->
+          <li><i class="fab fa-youtube-square fa-2x"></i></li>
+          <li><i class="fab fa-blogger fa-2x"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

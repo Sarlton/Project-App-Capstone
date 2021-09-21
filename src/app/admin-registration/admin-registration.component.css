@@ -1,0 +1,11 @@
+.card-body {
+  background-color: cadetblue;
+}
+
+.card-header {
+  background-color: teal;
+}
+
+.btn {
+  border-radius: 24px;
+}

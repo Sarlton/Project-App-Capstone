@@ -1,0 +1,7 @@
+.row {
+  background-color: cadetblue;
+}
+
+h3 > .text-center {
+  background-color: darkcyan;
+}

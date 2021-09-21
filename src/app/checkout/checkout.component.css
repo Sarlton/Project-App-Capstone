@@ -1,0 +1,15 @@
+.col-md-7 {
+  background-color: cadetblue;
+}
+
+.col-md-5 {
+  background-color: cadetblue;
+}
+
+.btn-primary:hover {
+  background-color: green;
+}
+
+.text-primary {
+  color: #000 !important;
+}

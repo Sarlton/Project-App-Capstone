@@ -1,0 +1,7 @@
+.table > tbody {
+  background-color: darkturquoise;
+}
+
+.table > thead {
+  background-color: cadetblue;
+}
